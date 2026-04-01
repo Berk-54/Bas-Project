@@ -1,0 +1,134 @@
+body{
+    background:#eeeeee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width:700px;
+    margin:40px auto;
+    background:#d9d9d9;
+    padding:30px 40px;
+}
+
+.logo{
+    width:140px;
+    margin:0 auto 10px auto;
+    background:#ff1d1d;
+    color:white;
+    text-align:center;
+    font-size:42px;
+    font-weight:bold;
+    border-radius:40px;
+    padding:12px 0;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.title h1,
+.title h2,
+.title h3,
+.title p{
+    margin:0;
+}
+
+.form-box{
+    width:420px;
+    margin:20px auto 0 auto;
+}
+
+.row{
+    margin-bottom:14px;
+    display:flex;
+    align-items:center;
+}
+
+label{
+    width:120px;
+}
+
+input{
+    flex:1;
+    padding:6px;
+    border: none;
+    background: white;
+}
+
+.small-input{
+    width:120px;
+    flex:unset;
+}
+
+.buttons{
+    text-align:center;
+    margin-top:25px;
+}
+
+.btn{
+    background:#ff1d1d;
+    color:white;
+    border:none;
+    padding:9px 18px;
+    margin:0 10px;
+    cursor:pointer;
+    text-decoration:none;
+    display:inline-block;
+}
+
+.menu{
+    text-align:center;
+    margin-top:20px;
+}
+
+.menu a{
+    display:inline-block;
+    background:#ff1d1d;
+    color:white;
+    text-decoration:none;
+    padding:10px 16px;
+    margin:8px;
+}
+
+.result-box{
+    width:320px;
+    margin:20px auto;
+    background:white;
+    padding:12px;
+}
+
+.search-row{
+    text-align:center;
+    margin-top:20px;
+}
+
+.search-row input{
+    width:220px;
+    padding:6px;
+}
+
+.search-row button{
+    background:#ff1d1d;
+    color:white;
+    border:none;
+    padding:7px 16px;
+    margin-left:10px;
+    cursor:pointer;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+    background:white;
+}
+
+table, th, td{
+    border:1px solid #999;
+}
+
+th, td{
+    padding:8px;
+    text-align:left;
+}
