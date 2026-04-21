@@ -1,0 +1,51 @@
+digraph UseCase {
+  rankdir=LR;
+  splines=true;
+  node [shape=ellipse, fontname="Arial"];
+  actor [shape=plaintext, fontname="Arial"];
+
+  Klant [label="Klant", shape=plaintext];
+  Verkoper [label="Verkoper", shape=plaintext];
+  Magazijn [label="Magazijnmedewerker", shape=plaintext];
+  Bezorger [label="Fietsbezorger", shape=plaintext];
+  MagMeester [label="Magazijnmeester", shape=plaintext];
+  Inkoop [label="Inkoopmedewerker", shape=plaintext];
+  Leverancier [label="Leverancier (extern)", shape=plaintext];
+
+  UC1 [label="Klant registreren / beheren"];
+  UC2 [label="Artikelen beheren"];
+  UC3 [label="Verkooporder opnemen"];
+  UC4 [label="Orderregels toevoegen"];
+  UC5 [label="Picklijst bekijken/printen"];
+  UC6 [label="Artikelen verzamelen en inpakken"];
+  UC7 [label="Order gereedmelden"];
+  UC8 [label="Bezorging registreren (geleverd)"];
+  UC9 [label="Voorraad bijwerken"];
+  UC10 [label="Inkooporder aanmaken"];
+  UC11 [label="Levering ontvangen en opslaan"];
+  UC12 [label="Leveranciers beheren"];
+
+  Klant -> UC3;
+  Verkoper -> UC1;
+  Verkoper -> UC3;
+  Verkoper -> UC4;
+
+  Magazijn -> UC5;
+  Magazijn -> UC6;
+  Magazijn -> UC7;
+
+  Bezorger -> UC8;
+
+  MagMeester -> UC2;
+  MagMeester -> UC9;
+  MagMeester -> UC11;
+
+  Inkoop -> UC10;
+  Inkoop -> UC12;
+
+  Leverancier -> UC11;
+
+  UC3 -> UC4 [style=dashed, label="<<include>>"];
+  UC6 -> UC9 [style=dashed, label="<<include>>"];
+  UC10 -> UC12 [style=dashed, label="<<include>>"];
+}
